@@ -21,7 +21,7 @@
             <a class="link header-logo" href="http://WebStudio">Web<span class="logo-second-color">Studio</span> </a>
             <ul class="list header-list">
               <li class="header-item">
-                <a class="link header-link" href="./index.html">Студия</a>
+                <a class="link header-link current" href="./index.html">Студия</a>
               </li>
               <li class="header-item">
                 <a class="link header-link" href="./portfolio.html">Портфолио</a>
@@ -35,7 +35,7 @@
               <svg class="header-icon" width="16" height="12"> <use href="./images/icons.svg#icon-envelope">
               </use></svg>info@devstudio.com</a></li>
             <li class="header-mail">
-              <a class="link header-tel" href="mailto:+380961111111">
+              <a class="link header-mail" href="mailto:+380961111111">
                 <svg class="header-icon" width="10" height="16">
                   <use href="./images/icons.svg#icon-mobilka"></use>
                 </svg> +380961111111</a></li>
@@ -47,7 +47,7 @@
 <section class="section motto">
     <div class="container motto-container">
     <h1 class="title-one">Эффективные решения для вашего бизнеса</h1>
-    <button class="main-btn" type="button">Заказать услугу</button>
+    <button class="main-btn" type="button" data-modal-open>Заказать услугу</button>
     </div>
 </section>
 
@@ -78,12 +78,28 @@
     <div class="container whaddowedo-container">
     <h2 class="title-two">Чем мы занимаемся</h2>
     <ul class="list whaddowedo-list">
-        <li class="whaddowedo-item"><img src="./images/ruki.jpg" alt="чем мы занимаемся" width="370" height="294"></li>
-    <li class="whaddowedo-item"><img src="./images/mobila.jpg" alt="для мобильных устройств" width="370" height="294"></li>
-    <li class="whaddowedo-item"><img src="./images/planshet.jpg" alt="для планшетов" width="370" height="294"></li>
+        <li class="whaddowedo-item">
+            <img src="./images/ruki.jpg" alt="чем мы занимаемся" width="370" height="294">
+            <div class="whaddowedo-box">
+                <p class="whaddowedo-text">Десктопные приложения</p>
+            </div>
+        </li>
+    <li class="whaddowedo-item">
+        <img src="./images/mobila.jpg" alt="для мобильных устройств" width="370" height="294">
+        <div class="whaddowedo-box">
+            <p class="whaddowedo-text">Мобильные приложения</p>
+        </div>
+    </li>
+    <li class="whaddowedo-item">
+        <img src="./images/planshet.jpg" alt="для планшетов" width="370" height="294">
+        <div class="whaddowedo-box">
+            <p class="whaddowedo-text">Дизайнерские решения</p>
+        </div>
+    </li>
    </ul>
     </div>
 </section>
+
 
 <section class="section team">
     <div class="container team-container"> 
@@ -186,11 +202,11 @@
     <a class="link footer-logo" href="http://WebStudio">Web<span class="logo-third-color">Studio</span> </a>
 <address>
     <ul class="list footer-list">
-        <li><a class="link footer-address" href="https://goo.gl/maps/e6FK5a6FQXhLv9fTA" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+        <li class="footer-contact"><a class="link footer-address" href="https://goo.gl/maps/e6FK5a6FQXhLv9fTA" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
 </li>
-<li><a class="link footer-mail" href="mailto:info@example.com">info@devstudio.com</a> 
+<li class="footer-contact"><a class="link footer-mail" href="mailto:info@example.com">info@devstudio.com</a> 
 </li>
-<li><a class="link footer-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+<li class="footer-contact"><a class="link footer-mail" href="tel:+380961111111">+38 096 111 11 11</a>
 </li>
 </ul>
 </address>
@@ -214,6 +230,14 @@
 </div>
     </div>
 </footer>
-    
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+    <button type="button" class="modal-close" data-modal-close>
+    <svg class="modal-close-icon" width="18" height="18"> <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
