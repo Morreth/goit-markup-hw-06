@@ -163,6 +163,10 @@ body  {
     color: var(--accent-color);
   }
 
+  .header-contacts {
+    margin-right: 0;
+    margin-left: 30px;
+  }
 
   .header-mail {
     display: flex;
