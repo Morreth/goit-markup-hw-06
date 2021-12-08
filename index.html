@@ -250,6 +250,47 @@
     <svg class="modal-close-icon" width="18" height="18"> <use href="./images/icons.svg#icon-close"></use>
             </svg>
         </button>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form action="#" class="modal-form">
+            <div class="modal-field">
+            <label class="modal-label-text">Имя </label>
+            <div class="input-wrap">
+            <input type="text" name="user-name" id="" class="modal-form-input" >
+            <svg class="input-icon" width = "12" height = "12">
+                <use href="./images/icons.svg#icon-head"></use></svg></div>
+        </div>
+        <div class="modal-field">
+            <label class="modal-label-text">Телефон </label><div class="input-wrap">
+            <input type="text" name="user-tel" id="" class="modal-form-input"><svg class="input-icon" width = "13" height = "13">
+                <use href="./images/icons.svg#icon-truba"></use></svg></div>
+        </div>
+        <div class="modal-field">   
+            <label class="modal-label-text">
+                Почта </label><div class="input-wrap">
+            <input type="text" name="user-email" id="" class="modal-form-input"><svg class="input-icon" width = "15" height = "12">
+                <use href="./images/icons.svg#icon-email-black"></use></svg>
+        </div> </div>
+        <div class="modal-field"> 
+        <label class="modal-label-text">
+                Комментарий </label>
+            <textarea name="user-comment"
+            id="user-comment"
+            class="modal-form-comment"
+            placeholder="Введите текст"></textarea> 
+        </div>
+
+        <div class="modal-field">   
+         <input type="checkbox" name="policy" id="policy" class="modal-check visually-hidden">
+        
+<label for="policy" class="policy-text"><span class="policy-item">
+    <svg class="check-icon" width = "11" height = "8">
+        <use href="./images/icons.svg#icon-check"></use></svg>
+</span> Соглашаюсь с рассылкой и принимаю <a href="#" class="link policy-link"> Условия договора</a></label></div>
+
+            <button type="submit" class="btn main-btn modal-btn">Отправить</button>
+
+
+        </form>
     </div>
 </div>
 <script src="./js/modal.js"></script>
