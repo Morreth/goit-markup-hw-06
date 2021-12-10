@@ -222,6 +222,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 color: #ffffff;
 cursor: pointer;
+outline: none;
 }
 .main-btn:active {
 background-color: var(--second-title-color);
@@ -565,7 +566,12 @@ align-items: center;
 border: 1px solid rgba(255, 255, 255, 0.3);
 box-sizing: border-box;
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
+border-radius: 4px;font-family: Roboto;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.03em;
+color: var(--second-text-color);
 }
 
 .subscribe-input::placeholder {
@@ -586,6 +592,18 @@ letter-spacing: 0.03em;
 color: #ffffff;
 }
 
+.subscribe-input::placeholder{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  }
+
 .subscribe-btn {
   width: 200px;
   height: 50px;
@@ -599,9 +617,10 @@ line-height: 1.87;
 letter-spacing: 0.06em;
 color: var(--main-title-color);
 background-color: var(--accent-color);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15)
 border-radius: 4px;
 margin-left: 12px;
+outline: none;
 }
 
 .subscribe-btn-icon {
@@ -649,7 +668,16 @@ padding: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
+
+.modal-close:hover {
+  color: var(--accent-color);
+  }
+.modal-close-icon {
+  fill: currentColor;
+}
+
 
 .is-hidden {
   visibility: hidden;
@@ -665,7 +693,7 @@ line-height: 1.15;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--second-title-color);
-margin-bottom: 30px;
+margin-bottom: 12px;
 }
 
 .modal-form-input {
@@ -776,6 +804,7 @@ color: #757575;
   display: block;
   margin: 0 auto;
   cursor: pointer;
+  outline: none;
 }
 
 /*----------------------------PORTFOLIO--------------------------*/
